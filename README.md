@@ -4,6 +4,7 @@ Aplicación web que permite buscar noticias de cualquier tema y guardarlas en un
 
 ## 🌐 Demo
 
+[Ver proyecto desplegado](https://news-explorer-steel.vercel.app/)
 <!-- Agrega aquí tu link de Vercel después del deploy -->
 
 ## 📋 Descripción
