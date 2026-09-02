@@ -1,0 +1,144 @@
+.header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 80px;
+}
+
+.header__logo {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  cursor: pointer;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.header__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0;
+}
+
+.header__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 16px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.header__link_active {
+  border-bottom: 3px solid #fff;
+}
+
+.header__link:hover {
+  opacity: 0.7;
+}
+
+.header__button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
+}
+
+.header__button:hover {
+  background-color: #fff;
+  color: #1a1b22;
+}
+
+.header__button_logout {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header_light {
+  background-color: #fff;
+  position: relative;
+  border-bottom: 1px solid #d1d2d6;
+}
+
+.header_light .header__logo {
+  color: #1a1b22;
+}
+
+.header_light .header__link {
+  color: #1a1b22;
+}
+
+.header_light .header__link_active {
+  border-bottom-color: #1a1b22;
+}
+
+.header__link_dark {
+  color: #1a1b22;
+}
+
+.header__button_dark {
+  border-color: #1a1b22;
+  color: #1a1b22;
+}
+
+.header__button_dark:hover {
+  background-color: #1a1b22;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    padding: 0 16px;
+  }
+
+  .header__logo {
+    font-size: 16px;
+  }
+
+  .header__link {
+    font-size: 14px;
+    padding: 0 8px;
+  }
+
+  .header__button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__logo {
+    font-size: 14px;
+  }
+}

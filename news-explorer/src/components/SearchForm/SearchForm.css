@@ -1,0 +1,133 @@
+.search {
+  position: relative;
+  min-height: 576px;
+  display: flex;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 40px 80px;
+}
+
+.search__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, #1a1b22cc, #1a1b22aa);
+}
+
+.search__content {
+  position: relative;
+  z-index: 1;
+  max-width: 608px;
+  margin: 0 auto;
+  text-align: left;
+  width: 100%;
+}
+
+.search__title {
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  font-size: 60px;
+  font-weight: 400;
+  margin: 0 0 32px;
+  line-height: 1.067;
+}
+
+.search__subtitle {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 88px;
+  line-height: 1.556;
+}
+
+.search__form {
+  display: flex;
+  background-color: #fff;
+  border-radius: 100px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.search__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 24px;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  background: transparent;
+  color: #1a1b22;
+}
+
+.search__input::placeholder {
+  color: #b6bcbf;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.search__button {
+  background-color: #2f71e5;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 0 56px;
+  height: 64px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.search__button:hover {
+  background-color: #347eff;
+}
+
+@media (max-width: 768px) {
+  .search {
+    padding: 100px 16px 32px;
+    min-height: 400px;
+  }
+
+  .search__title {
+    font-size: 36px;
+  }
+
+  .search__subtitle {
+    font-size: 14px;
+    margin-bottom: 48px;
+  }
+
+  .search__form {
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: visible;
+    background: transparent;
+    box-shadow: none;
+    gap: 16px;
+  }
+
+  .search__input {
+    background: #fff;
+    border-radius: 100px;
+    height: 56px;
+    padding: 0 24px;
+  }
+
+  .search__button {
+    border-radius: 100px;
+    height: 56px;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .search__title {
+    font-size: 28px;
+  }
+}
